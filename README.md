@@ -1,4 +1,4 @@
-#### Vue3 + vite 配置全局sass
+#### 1. Vue3 + vite 配置全局sass
 
 1. 安装sass需要的安装包 `yarn add  sass-loader node-sass sass`
 
@@ -17,7 +17,7 @@ export default defineConfig({
 })
 ```
 
-#### 按需引入Element-plus
+#### 2. 按需引入Element-plus
 
 安装插件：`yarn add vite-plugin-style-import vite-plugin-components`
 
@@ -44,5 +44,19 @@ export default defineConfig({
       ],
     }),
   ]
+})
+```
+
+#### 3. 配置路径别名
+
+配置`vite.config.js`
+
+```javascript
+export default defineConfig({
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  }
 })
 ```
