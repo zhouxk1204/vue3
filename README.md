@@ -1,7 +1,22 @@
-# Vue 3 + Vite
+#### Vue3 + vite 配置全局sass
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+1. 安装sass需要的安装包
 
-## Recommended IDE Setup
+```
+yarn add  sass-loader node-sass sass
+```
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+2. 配置`vite.config.js`
+
+```javascript
+export default defineConfig({
+  plugins: [vue()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/assets/scss/index.scss";'
+      }
+    }
+  }
+})
+```
