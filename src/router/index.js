@@ -3,11 +3,15 @@ import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    component: () => import('@/components/HelloWorld.vue')
+    component: () => import('@/components/App.vue')
   },
   {
-    path: '/home',
-    component: () => import('@/components/Home.vue')
+    path: '/user',
+    component: () => import('@/views/User.vue')
+  },
+  {
+    path: '/create-user',
+    component: () => import('@/views/CreateUser.vue')
   }
 ]
 
