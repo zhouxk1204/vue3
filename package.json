@@ -12,7 +12,8 @@
     "sass": "^1.45.0",
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-style-import": "^1.4.0",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",

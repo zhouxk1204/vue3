@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>HelloWorld</h1>
   <el-button type="primary">Primary</el-button>
 </template>
 
